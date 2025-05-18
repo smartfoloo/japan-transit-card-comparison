@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>交通系ICカード比較</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="noise"></div>
+
+  <nav class="navbar">
+    <div class="logo">交通系ICカード比較</div>
+    <div class="nav-links">
+      <a href="#" class="active">比較</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <div class="hero-content">
+        <h1>交通系ICカード<span class="gradient-text">比較</span></h1>
+        <p class="subtitle">全国の交通系ICカードを簡単比較。あなたに最適なカードを見つけましょう。</p>
+      </div>
+      <div class="hero-cards">
+        <div class="floating-card" style="--delay: 0s; --color: var(--green);">
+          <div class="card-chip"></div>
+          <div class="card-logo">Suica</div>
+        </div>
+        <div class="floating-card" style="--delay: 0.2s; --color: var(--pink);">
+          <div class="card-chip"></div>
+          <div class="card-logo">PASMO</div>
+        </div>
+        <div class="floating-card" style="--delay: 0.4s; --color: var(--blue);">
+          <div class="card-chip"></div>
+          <div class="card-logo">ICOCA</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="card-selector-section">
+      <div class="section-header">
+        <h2>カードを選択して比較</h2>
+        <p>最大3枚のカードを選んで詳細を比較できます</p>
+      </div>
+
+      <div class="card-selector">
+        <div class="selector-container">
+          <div class="glass-card selector-wrapper">
+            <div class="selector-label">
+              <span class="selector-number">01</span>
+              <span>1枚目</span>
+            </div>
+            <select id="card1" class="card-select"></select>
+          </div>
+
+          <div class="glass-card selector-wrapper">
+            <div class="selector-label">
+              <span class="selector-number">02</span>
+              <span>2枚目</span>
+            </div>
+            <select id="card2" class="card-select"></select>
+          </div>
+
+          <div class="glass-card selector-wrapper">
+            <div class="selector-label">
+              <span class="selector-number">03</span>
+              <span>3枚目</span>
+            </div>
+            <select id="card3" class="card-select"></select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-preview-section">
+      <div class="card-preview">
+        <div id="preview1" class="preview-card glass-card">
+          <div class="card-image">
+            <div class="card-chip"></div>
+          </div>
+          <div class="card-details">
+            <div class="card-name"></div>
+            <div class="card-issuer"></div>
+          </div>
+        </div>
+
+        <div id="preview2" class="preview-card glass-card">
+          <div class="card-image">
+            <div class="card-chip"></div>
+          </div>
+          <div class="card-details">
+            <div class="card-name"></div>
+            <div class="card-issuer"></div>
+          </div>
+        </div>
+
+        <div id="preview3" class="preview-card glass-card">
+          <div class="card-image">
+            <div class="card-chip"></div>
+          </div>
+          <div class="card-details">
+            <div class="card-name"></div>
+            <div class="card-issuer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section">
+      <div class="section-header">
+        <h2>詳細比較</h2>
+        <p>選択したカードの機能や特徴を比較</p>
+      </div>
+
+      <div class="glass-card comparison-container">
+        <div id="comparison" class="comparison-table">
+          <!-- Filled by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="section-header">
+        <h2>主な機能</h2>
+        <p>交通系ICカードの便利な機能</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card glass-card">
+          <div class="feature-icon" style="--feature-color: var(--blue);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>オートチャージ</h3>
+          <p>残高が少なくなると自動的にチャージ</p>
+        </div>
+
+        <div class="feature-card glass-card">
+          <div class="feature-icon" style="--feature-color: var(--mauve);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M2 9V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1">
+              </path>
+              <path d="M2 13h10"></path>
+              <path d="m9 16 3-3-3-3"></path>
+            </svg>
+          </div>
+          <h3>定期券機能</h3>
+          <p>通勤・通学定期券としても利用可能</p>
+        </div>
+
+        <div class="feature-card glass-card">
+          <div class="feature-icon" style="--feature-color: var(--green);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+              <line x1="2" x2="22" y1="10" y2="10"></line>
+            </svg>
+          </div>
+          <h3>電子マネー</h3>
+          <p>交通機関以外でも支払いに利用可能</p>
+        </div>
+
+        <div class="feature-card glass-card">
+          <div class="feature-icon" style="--feature-color: var(--peach);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
+              </path>
+              <path d="M18 14h-8"></path>
+              <path d="M15 18h-5"></path>
+              <path d="M10 6h8v4h-8V6Z"></path>
+            </svg>
+          </div>
+          <h3>モバイル対応</h3>
+          <p>スマートフォンでも利用可能</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">IC Card Hub</div>
+      <p>© 2025 交通系ICカード比較サービス</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
